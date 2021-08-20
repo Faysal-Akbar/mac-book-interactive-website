@@ -1,0 +1,10 @@
+.container{
+    margin-top: 40px;
+}
+.image img{
+    width: 500px;
+    height: 500px;
+}
+hr{
+    color: black;
+}
