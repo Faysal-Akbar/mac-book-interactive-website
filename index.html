@@ -19,50 +19,50 @@
                     <img src="images/mac.png" alt="">
                   </div>
                   <div class="col-lg-6">
-                    <h2>Customise Your Blue 24-inch iMac with Apple M1 chip</h2>
+                    <h1>Customise Your Blue 24-inch iMac with Apple M1 chip</h1>
                     <p>Apple Card Monthly Installments (ACMI) is a 0% APR payment option available to select at checkout for certain Apple products purchased at Apple Store locations, apple.com, the Apple Store app, or by calling 1-800-MY-APPLE, and is subject to credit approval and credit limit. </p>
                     <div>
                         <h4>memory</h4>
-                        <button type="button" class="btn btn-outline-secondary">8GB unified memory</button>
-                        <button type="button" class="btn btn-outline-secondary">16GB unified memory</button>
+                        <button id="memory-button1" type="button" class="btn btn-outline-secondary">8GB unified memory</button>
+                        <button id="memory-button2" type="button" class="btn btn-outline-secondary">16GB unified memory</button>
                     </div>
                     <div class="mt-4">
                         <h4>Storage</h4>
-                        <button type="button" class="btn btn-outline-secondary">256GB SSD Storage</button>
-                        <button type="button" class="btn btn-outline-secondary">512GB SSD Storage</button>
-                        <button type="button" class="btn btn-outline-secondary">1TB SSD Storage</button>
+                        <button id="storage-button1" type="button" class="btn btn-outline-secondary">256GB SSD Storage</button>
+                        <button id="storage-button2" type="button" class="btn btn-outline-secondary">512GB SSD Storage</button>
+                        <button id="storage-button3" type="button" class="btn btn-outline-secondary">1TB SSD Storage</button>
                     </div>
                     <div class="mt-4">
                         <h4>Choose Your delivery Option</h4>
-                        <button type="button" class="btn btn-outline-secondary">Friday, August 25 FREE Prime Delivery</button> <br> <br>
-                        <button type="button" class="btn btn-outline-secondary">Friday, August 21 Delivery Charge $20</button>
+                        <button id="delivery-button1" type="button" class="btn btn-outline-secondary">Friday, August 25 FREE Prime Delivery</button> <br> <br>
+                        <button id="delivery-button2" type="button" class="btn btn-outline-secondary">Friday, August 21 Delivery Charge $20</button>
                     </div>
                     <div class="col-lg-9 mt-4">
                         <div class="d-flex justify-content-between">
                             <h5>Best Price</h5>
-                            <h5>$1299</h5>
+                            <h5>$<span id="best-cost">1299</span></h5>
                         </div>
                         <div class="d-flex justify-content-between">
                             <h5>Extra memory Cost</h5>
-                            <h5>$0</h5>
+                            <h5>$<span id="memory-cost">0</span></h5>
                         </div>
                         <div class="d-flex justify-content-between">
                             <h5>Extra Storage Cost</h5>
-                            <h5>$0</h5>
+                            <h5>$<span id="storage-cost">0</span></h5>
                         </div>
                         <div class="d-flex justify-content-between">
                             <h5>Delivery Charge</h5>
-                            <h5>$0</h5>
+                            <h5>$<span id="delivery-cost">0</span></h5>
                         </div>
                         <hr>
                         <div class="d-flex justify-content-between">
                             <h5>Total Price</h5>
-                            <h5>$1299</h5>
+                            <h5>$<span id="total-price">1299</span></h5>
                         </div>
                         <div>
                             <p class="mt-2">Add Promo code</p>
                             <div class="input-group mb-3">
-                                <input type="text" class="form-control" aria-describedby="button-addon2">
+                                <input id="input-field" type="text" class="form-control" aria-describedby="button-addon2">
                                 <button class="btn btn-danger" type="button" id="button-addon2">Apply</button>
                               </div>
                         </div>
@@ -72,9 +72,10 @@
               </div>
               <hr>
         </section>
-        <section>
-            <h1 class="text-center">Total : $1299</h1>
-        </section>
+        <footer>
+            <h1 class="text-center">Total : $<span id="footer-total">1299</span></h1>
+        </footer>
     </main>
+    <script src="js/app.js"></script>
 </body>
 </html>
